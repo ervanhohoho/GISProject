@@ -1,6 +1,6 @@
 [Ilwis]
 Description=
-Time=1491226910
+Time=1491229840
 Version=3.1
 Class=Table
 Type=Table
@@ -8,7 +8,7 @@ Type=Table
 Domain=SulutPulauLayout.mps
 DomainInfo=SulutPulauLayout.mps;Long;UniqueID;0;;
 Columns=1
-Records=2
+Records=3
 Type=TableStore
 [TableStore]
 Data=SulutPulauLayout.TB#
@@ -18,7 +18,7 @@ Type=TableBinary
 StoreTime=1491226536
 [Col:Name]
 Description=
-Time=1491226910
+Time=1491229840
 Version=3.1
 Class=Column
 Domain=String.dom

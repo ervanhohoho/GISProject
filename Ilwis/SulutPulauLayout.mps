@@ -1,6 +1,6 @@
 [Domain]
 Description=Domain UniqueID "SulutPulauLayout.mps"
-Time=1491226910
+Time=1491229840
 Version=3.1
 Class=Domain UniqueID
 Width=8
@@ -8,7 +8,7 @@ Type=DomainUniqueID
 [Ilwis]
 ContainsDom=True
 Description=
-Time=1491226962
+Time=1491229878
 Version=3.1
 Class=ILWIS::Segment Map
 Type=BaseMap
@@ -16,7 +16,7 @@ Type=BaseMap
 Sorting=AlphaNumeric
 Prefix=seg
 [DomainIdentifier]
-Nr=2
+Nr=3
 [BaseMap]
 AttributeTable=SulutPulauLayout.tbt
 CoordSystem=unknown.csy
@@ -32,18 +32,18 @@ Type=SegmentMapStore
 [SegmentMapStore]
 Status=-32767
 Format=2
-Segments=2
+Segments=3
 DeletedSegments=0
 Coordinates=0
 [Table]
 Description=
-Time=1491226982
+Time=1491229900
 Version=3.1
 Class=Table
 Domain=None.dom
 DomainInfo=None.dom;Byte;none;0;;
 Columns=5
-Records=2
+Records=3
 Type=TableStore
 [TableStore]
 Data=SulutPulauLayout.mps#
@@ -56,7 +56,7 @@ Col4=SegmentValue
 Type=TableBinary
 [Col:MinCoords]
 Description=
-Time=1491226982
+Time=1491229900
 Version=3.1
 Class=Column
 Domain=unknown.csy
@@ -68,7 +68,7 @@ Stored=Yes
 Type=ColumnStore
 [Col:MaxCoords]
 Description=
-Time=1491226982
+Time=1491229900
 Version=3.1
 Class=Column
 Domain=unknown.csy
@@ -80,7 +80,7 @@ Stored=Yes
 Type=ColumnStore
 [Col:Coords]
 Description=
-Time=1491226982
+Time=1491229900
 Version=3.1
 Class=Column
 Domain=CoordBuf.dom
@@ -92,7 +92,7 @@ Stored=Yes
 Type=ColumnStore
 [Col:Deleted]
 Description=
-Time=1491226982
+Time=1491229900
 Version=3.1
 Class=Column
 Domain=bool.dom
@@ -108,7 +108,7 @@ Stored=Yes
 Type=ColumnStore
 [Col:SegmentValue]
 Description=
-Time=1491226982
+Time=1491229900
 Version=3.1
 Class=Column
 Domain=SulutPulauLayout.mps

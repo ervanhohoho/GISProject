@@ -1,0 +1,35 @@
+[Ilwis]
+Class=Map View
+Time=1489589230
+Type=MapView
+Version=3.1
+
+[Layer1]
+Coloring=Normal
+Info=Yes
+Map=C__Users_Ervan_Documents_Project_GIS_Sulut.mpr
+Scale Limits=100:1000000
+Show=Yes
+Text=No
+Type=MapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+
+[MapView]
+Background=ffffff
+CoordSystem=unknown.csy
+GeoRef=Sulut_GeoRef.grf
+Height=648
+Layers=1
+MapBounds=0 0 2595 3687
+MinMax=0 0 2595 3687
+Offset=0 0
+Scale=984653.998196
+Width=1152
+
+[ObjectDependency]
+NrDepObjects=3
+Object0=Sulut_GeoRef.grf
+Object1=unknown.csy
+Object2=C__Users_Ervan_Documents_Project_GIS_Sulut.mpr
+

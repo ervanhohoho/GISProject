@@ -1,0 +1,28 @@
+[Ilwis]
+Description=Map C__Users_Ervan_Documents_Project_GIS_Sulut
+Time=1489588712
+Version=3.1
+Class=Raster Map
+Type=BaseMap
+[BaseMap]
+CoordSystem=unknown.csy
+CoordBounds=0 -2595 3687 -0
+Domain=Color.dom
+DomainInfo=Color.dom;Long;color;0;;
+Type=Map
+Proximity=12.975000
+[Map]
+GeoRef=Sulut_GeoRef.grf
+Size=2595 3687
+Type=MapStore
+[MapStore]
+StoreTime=1489588626
+Data=C__Users_Ervan_Documents_Project_GIS_Sulut.mp#
+Structure=Line
+StartOffset=0
+RowLength=3687
+PixelInterLeaved=No
+SwapBytes=No
+Type=Long
+UseAs=No
+Format=2

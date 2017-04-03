@@ -1,0 +1,188 @@
+[Table]
+Description=GeoReference TiePoints "Sulut_GeoRef"
+Time=1489678998
+Version=3.1
+Class=Table
+Domain=None.dom
+DomainInfo=None.dom;Byte;none;0;;
+Columns=7
+Records=4
+Type=TableStore
+[TableStore]
+Data=Sulut_GeoRef.gr#
+UseAs=No
+Col0=X
+Col1=Y
+Col2=Row
+Col3=Col
+Col4=Active
+Type=TableBinary
+Col5=DRow
+Col6=DCol
+StoreTime=1489588802
+[Col:X]
+Description=X-coord
+Time=1489678998
+Version=3.1
+Class=Column
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-1000000000.000:1000000000.000:0.001:offset=0
+ReadOnly=No
+OwnedByTable=Yes
+StoreType=Real
+Stored=Yes
+Type=ColumnStore
+Sum=?
+Mean=?
+StdDev=?
+[Col:Y]
+Description=Y-coord
+Time=1489589198
+Version=3.1
+Class=Column
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-1000000000.000:1000000000.000:0.001:offset=0
+ReadOnly=No
+OwnedByTable=Yes
+StoreType=Real
+Stored=Yes
+Type=ColumnStore
+Sum=?
+Mean=?
+StdDev=?
+[Col:Row]
+Description=Pixel row
+Time=1489588712
+Version=3.1
+Class=Column
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-2595:5190:offset=0
+ReadOnly=No
+OwnedByTable=Yes
+Sum=?
+Mean=?
+StdDev=?
+StoreType=Long
+Stored=Yes
+Type=ColumnStore
+[Col:Col]
+Description=Pixel column
+Time=1489588712
+Version=3.1
+Class=Column
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-3687:7374:offset=0
+ReadOnly=No
+OwnedByTable=Yes
+Sum=?
+Mean=?
+StdDev=?
+StoreType=Long
+Stored=Yes
+Type=ColumnStore
+[Col:Active]
+Description=Active point
+Time=1489588712
+Version=3.1
+Class=Column
+Domain=bool.dom
+DomainInfo=bool.dom;Byte;bool;0;;
+Range=0:1:offset=-1
+ReadOnly=No
+OwnedByTable=Yes
+Sum=?
+Mean=?
+StdDev=?
+StoreType=Long
+Stored=Yes
+Type=ColumnStore
+[Ilwis]
+Description=GeoReference TiePoints "Sulut_GeoRef"
+Time=1489679004
+Version=3.1
+Class=GeoReference TiePoints
+Type=GeoRef
+[GeoRef]
+CoordSystem=unknown.csy
+Lines=2595
+Columns=3687
+Type=GeoRefCTP
+[GeoRefCTP]
+Background Map=C__Users_Ervan_Documents_Project_GIS_Sulut.mpr
+SubPixelPrecision=No
+Transformation=Affine
+[Col:DRow]
+Description=
+Time=1489679016
+Version=3.1
+Class=Column
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-9999.00:9999.00:0.01:offset=0
+ReadOnly=Yes
+OwnedByTable=Yes
+Sum=?
+Mean=?
+StdDev=?
+StoreType=Long
+Stored=Yes
+Type=ColumnStore
+[Col:DCol]
+Description=
+Time=1489679016
+Version=3.1
+Class=Column
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-9999.00:9999.00:0.01:offset=0
+ReadOnly=Yes
+OwnedByTable=Yes
+Sum=?
+Mean=?
+StdDev=?
+StoreType=Long
+Stored=Yes
+Type=ColumnStore
+[AdditionalInfo]
+Line0=Transformation: Affine
+Line1=Nr of Ground Control Points: 4
+Line2=Nr of Active Ground Control Points: 4
+Line3=Shift of Ground-Coords grdX,grdY to Centroid:
+Line4=X = grdX - 644668.750 m
+Line5=Y = grdY - 113352.750 m
+Line6=Equations (from Ground to Picture):
+Line7=pRow = 1343.250 + 6.860275e-006 * X + -0.012639 * Y
+Line8=pCol = 1864.750 + 0.012233 * X + 7.564477e-006 * Y
+Line9=Azimuth of colums in rastermap:
+Line10= -0.03543 degrees
+Line11=Grid intersection angle is
+Line12=(computed at point (644668.75000, 113352.75000):
+Line13= 89.99784 degrees
+Line14=Pixel size:
+Line15= 80.42069 meter (or degrees) per pixel
+Line16=
+Line17= Inverse Transformation:
+Line18=Shift of Picture pRow,pCol to Centroid:
+Line19=Row = pRow - 1343.250            
+Line20=Col = pCol - 1864.750            
+Line21=grdX = 644668.75000 + 0.04892 * Row + 81.74530 * Col
+Line22=grdY = 113352.75000 + -79.11752 * Row + 0.04437 * Col
+Line23=Scale in X direction : 81.74531 meter (or degrees) per pixel
+Line24=Scale in Y direction : 79.11753 meter (or degrees) per pixel
+Line25=
+Line26= Simplified Coord to RowCol equations: ('GeoRefSimple')
+Line27=Row = 2771.540 + 6.860275e-006 * X + -0.012639 * Y
+Line28=Col = -6022.415 + 0.012233 * X + 7.564477e-006 * Y
+Line29=Sigma = ~0.61 pixels
+Line30=Row = 2771.540 + 6.860275e-006 * X + -0.012639 * Y
+Line31=Col = -6022.415 + 0.012233 * X + 7.564477e-006 * Y
+Line32=Pixel size (GrSmpl):
+Line33= 80.42069 meter (or degrees) per pixel
+Line34=RC * XY matrix = ~
+Line35=[1   -2.588642e-008]
+Line36=[-5.633477e-008   1]
+Lines=37

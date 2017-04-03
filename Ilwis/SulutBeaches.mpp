@@ -1,6 +1,6 @@
 [Domain]
-Description=Domain UniqueID "SulutCities.mpp"
-Time=1490110036
+Description=Domain UniqueID "SulutBeaches.mpp"
+Time=1491224806
 Version=3.1
 Class=Domain UniqueID
 Width=8
@@ -8,7 +8,7 @@ Type=DomainUniqueID
 [Ilwis]
 ContainsDom=True
 Description=
-Time=1491223392
+Time=1491224806
 Version=3.1
 Class=Point Map
 Type=BaseMap
@@ -16,37 +16,37 @@ Type=BaseMap
 Sorting=AlphaNumeric
 Prefix=pnt
 [DomainIdentifier]
-Nr=406
+Nr=11
 [BaseMap]
-AttributeTable=SulutCities.tbt
+AttributeTable=SulutBeaches.tbt
 CoordSystem=unknown.csy
 CoordBounds=492168.48800000001 14234.648000000001 793690.3600000001 219708.22000000003
-Domain=SulutCities.mpp
-DomainInfo=SulutCities.mpp;Long;UniqueID;0;;
+Domain=SulutBeaches.mpp
+DomainInfo=SulutBeaches.mpp;Long;UniqueID;0;;
 Proximity=1027.367860
 Type=PointMap
 [PointMap]
-Points=411
+Points=12
 Type=PointMapStore
 [Table]
 Description=
-Time=1491223394
+Time=1491224818
 Version=3.1
 Class=Table
 Domain=None.dom
 DomainInfo=None.dom;Byte;none;0;;
 Columns=2
-Records=412
+Records=13
 Type=TableStore
 [TableStore]
-Data=sulutcities.pt#
+Data=SulutBeaches.pt#
 UseAs=No
 Col0=Coordinate
 Col1=Name
 Type=TableBinary
 [Col:Coordinate]
 Description=
-Time=1491223394
+Time=1491224818
 Version=3.1
 Class=Column
 Domain=unknown.csy
@@ -58,16 +58,16 @@ Stored=Yes
 Type=ColumnStore
 [Col:Name]
 Description=Point name/value
-Time=1491223394
+Time=1491224818
 Version=3.1
 Class=Column
-Domain=SulutCities.mpp
-DomainInfo=SulutCities.mpp;Long;UniqueID;0;;
+Domain=SulutBeaches.mpp
+DomainInfo=SulutBeaches.mpp;Long;UniqueID;0;;
 ReadOnly=No
 OwnedByTable=Yes
 StoreType=Long
 Stored=Yes
 Type=ColumnStore
 [PointMapStore]
-StoreTime=1491223392
+StoreTime=1491224806
 Format=2

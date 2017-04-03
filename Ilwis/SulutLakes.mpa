@@ -1,0 +1,47 @@
+[Domain]
+Description=Domain UniqueID "SulutLakes.mpa"
+Time=1491225672
+Version=3.1
+Class=Domain UniqueID
+Width=8
+Type=DomainUniqueID
+[Ilwis]
+ContainsDom=True
+Description=Lakes
+Time=1491225672
+Version=3.1
+Class=Dependent Polygon Map
+DomainChangeable=Yes
+Type=BaseMap
+[DomainSort]
+Sorting=AlphaNumeric
+Prefix=Pol
+[DomainIdentifier]
+Nr=4
+[IlwisObjectVirtual]
+Expression=PolygonMapFromSegment(SulutLakes,"")
+DefOnlyPossible=No
+[ObjectDependency]
+NrDepObjects=1
+Object0=SulutLakes.mps
+[PolygonMap]
+Type=PolygonMapVirtual
+Topological=Yes
+[PolygonMapVirtual]
+Expression=PolygonMapFromSegment(SulutLakes,"")
+Type=PolygonMapFromSegment
+[PolygonMapFromSegment]
+SegmentMap=SulutLakes.mps
+Mask=
+AutoCorrect=No
+[BaseMap]
+CoordSystem=unknown.csy
+CoordBounds=492168.48800000001 14234.648000000001 793690.3600000001 219708.22000000003
+Domain=SulutLakes.mpa
+DomainInfo=SulutLakes.mpa;Long;UniqueID;0;;
+Type=PolygonMap
+[PolygonMapStore]
+Format=5
+DataPol=SulutLakes.mpz#
+Polygons=4
+DeletedPolygons=0

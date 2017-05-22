@@ -1,6 +1,6 @@
 [Domain]
-Description=Domain UniqueID "SulutPulauLayout.mps"
-Time=1495426732
+Description=Domain UniqueID "SulutRoads.mps"
+Time=1495468902
 Version=3.1
 Class=Domain UniqueID
 Width=8
@@ -8,7 +8,7 @@ Type=DomainUniqueID
 [Ilwis]
 ContainsDom=True
 Description=
-Time=1495426860
+Time=1495468902
 Version=3.1
 Class=ILWIS::Segment Map
 Type=BaseMap
@@ -16,13 +16,13 @@ Type=BaseMap
 Sorting=AlphaNumeric
 Prefix=seg
 [DomainIdentifier]
-Nr=14
+Nr=258
 [BaseMap]
-AttributeTable=SulutPulauLayout.tbt
+AttributeTable=SulutRoads.tbt
 CoordSystem=unknown.csy
 CoordBounds=492168.48800000001 14234.648000000001 793690.3600000001 219708.22000000003
-Domain=SulutPulauLayout.mps
-DomainInfo=SulutPulauLayout.mps;Long;UniqueID;0;;
+Domain=SulutRoads.mps
+DomainInfo=SulutRoads.mps;Long;UniqueID;0;;
 Proximity=1027.367860
 Type=SegmentMap
 [SegmentMap]
@@ -32,21 +32,21 @@ Type=SegmentMapStore
 [SegmentMapStore]
 Status=-32767
 Format=2
-Segments=14
+Segments=258
 DeletedSegments=0
 Coordinates=0
 [Table]
 Description=
-Time=1495426860
+Time=1495468912
 Version=3.1
 Class=Table
 Domain=None.dom
 DomainInfo=None.dom;Byte;none;0;;
 Columns=5
-Records=14
+Records=258
 Type=TableStore
 [TableStore]
-Data=sulutpulaulayout.mps#
+Data=sulutroads.mps#
 UseAs=No
 Col0=MinCoords
 Col1=MaxCoords
@@ -56,7 +56,7 @@ Col4=SegmentValue
 Type=TableBinary
 [Col:MinCoords]
 Description=
-Time=1495426860
+Time=1495468910
 Version=3.1
 Class=Column
 Domain=unknown.csy
@@ -68,7 +68,7 @@ Stored=Yes
 Type=ColumnStore
 [Col:MaxCoords]
 Description=
-Time=1495426860
+Time=1495468910
 Version=3.1
 Class=Column
 Domain=unknown.csy
@@ -80,7 +80,7 @@ Stored=Yes
 Type=ColumnStore
 [Col:Coords]
 Description=
-Time=1495426860
+Time=1495468910
 Version=3.1
 Class=Column
 Domain=CoordBuf.dom
@@ -92,7 +92,7 @@ Stored=Yes
 Type=ColumnStore
 [Col:Deleted]
 Description=
-Time=1495426860
+Time=1495468910
 Version=3.1
 Class=Column
 Domain=bool.dom
@@ -108,11 +108,11 @@ Stored=Yes
 Type=ColumnStore
 [Col:SegmentValue]
 Description=
-Time=1495426860
+Time=1495468910
 Version=3.1
 Class=Column
-Domain=SulutPulauLayout.mps
-DomainInfo=SulutPulauLayout.mps;Long;UniqueID;0;;
+Domain=SulutRoads.mps
+DomainInfo=SulutRoads.mps;Long;UniqueID;0;;
 ReadOnly=No
 OwnedByTable=No
 StoreType=Long

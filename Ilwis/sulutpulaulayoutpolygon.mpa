@@ -1,0 +1,47 @@
+[Domain]
+Description=Domain UniqueID "sulutpulaulayoutpolygon.mpa"
+Time=1495426906
+Version=3.1
+Class=Domain UniqueID
+Width=8
+Type=DomainUniqueID
+[Ilwis]
+ContainsDom=True
+Description=PolygonMapFromSegment(sulutpulaulayout,"")
+Time=1495426906
+Version=3.1
+Class=Dependent Polygon Map
+DomainChangeable=Yes
+Type=BaseMap
+[DomainSort]
+Sorting=AlphaNumeric
+Prefix=Pol
+[DomainIdentifier]
+Nr=14
+[IlwisObjectVirtual]
+Expression=PolygonMapFromSegment(sulutpulaulayout,"")
+DefOnlyPossible=No
+[ObjectDependency]
+NrDepObjects=1
+Object0=sulutpulaulayout.mps
+[PolygonMap]
+Type=PolygonMapVirtual
+Topological=Yes
+[PolygonMapVirtual]
+Expression=PolygonMapFromSegment(sulutpulaulayout,"")
+Type=PolygonMapFromSegment
+[PolygonMapFromSegment]
+SegmentMap=sulutpulaulayout.mps
+Mask=
+AutoCorrect=No
+[BaseMap]
+CoordSystem=unknown.csy
+CoordBounds=492168.48800000001 14234.648000000001 793690.3600000001 219708.22000000003
+Domain=sulutpulaulayoutpolygon.mpa
+DomainInfo=sulutpulaulayoutpolygon.mpa;Long;UniqueID;0;;
+Type=PolygonMap
+[PolygonMapStore]
+Format=5
+DataPol=sulutpulaulayoutpolygon.mpz#
+Polygons=14
+DeletedPolygons=0

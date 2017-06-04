@@ -1,6 +1,6 @@
 [Ilwis]
 Class=Layout
-Time=1495552104
+Time=1496560322
 Type=Layout
 Version=3.1
 
@@ -28,9 +28,9 @@ Paper Size=27940 21590
 Keep Scale=Yes
 MapView=FinalMap.mpv
 Offset=0 0
-Position=2350 1950 19100 25760
+Position=2330 2390 19100 26210
 Scale=1217216.000000
-Size=2535 3604
+Size=2538 3605
 
 [Item 2]
 Alignment=Left
@@ -40,7 +40,7 @@ Half=No
 LineWidth=0.000000
 LogFont=F4FFFFFF000000000000000000000000900100000000000100000000
 Map View=1
-Position=2940 2020 6930 6020
+Position=3230 2990 6560 6320
 Rose=8
 Text=Yes
 Text Length=5
@@ -50,14 +50,14 @@ Transparency=Yes
 Type=WindRose
 
 [Item 3]
-Alignment=Left
+Alignment=Center
 Font=Arial
-LogFont=ECFFFFFF000000000000000000000000900100000000000100000000
-Position=3200 11780 4010 19340
+LogFont=DEFFFFFF000000000000000000000000BC0200000000000100000000
+Position=1490 6380 2840 22940
 Text=53756C617765736920557461726100
 Text Length=15
 TextColor=0
-Transparency=Yes
+Transparency=No
 
 [Item 4]
 Alignment=Left

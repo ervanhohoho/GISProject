@@ -1,13 +1,13 @@
 [Ilwis]
 Description=
-Time=1490110036
+Time=1496550674
 Version=3.1
 Class=Table
 Type=Table
 [Table]
 Domain=SulutCities.mpp
 DomainInfo=SulutCities.mpp;Long;UniqueID;0;;
-Columns=1
+Columns=3
 Records=406
 Type=TableStore
 [TableStore]
@@ -16,9 +16,11 @@ UseAs=No
 Col0=Name
 Type=TableBinary
 StoreTime=1489679040
+Col1=Population
+Col2=Density
 [Col:Name]
 Description=
-Time=1489850008
+Time=1495549264
 Version=3.1
 Class=Column
 Domain=String.dom
@@ -28,3 +30,59 @@ OwnedByTable=No
 StoreType=String
 Stored=Yes
 Type=ColumnStore
+Width=20
+[Col:Population]
+Description=Population = (RND(651)+149) * LENGTH(Name)
+Time=1496550662
+Version=3.1
+Class=Column Calculate
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-70364454026970:70366601510765:1:offset=0
+ReadOnly=No
+OwnedByTable=No
+StoreType=Real
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=0
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=(RND(651)+149) * LENGTH(Name)
+NrDepObjects=1
+Object0=Column Name
+Calc=True
+Sum=1484830.000000
+Mean=3657.216749
+StdDev=1878.938299
+MinMax=604:12222
+[TableView]
+Columns=3
+Col0=Name
+Col1=Population
+Col2=Density
+StatPaneVisible=No
+RecordView=No
+ButtonWidth=8
+[Col:Density]
+Description=Density = IFF(Population>6500,"Crowded",IFF(Population>3000,"Average","Low"))
+Time=1496550674
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=IFF(Population>6500,"Crowded",IFF(Population>3000,"Average","Low"))
+NrDepObjects=1
+Object0=Column Population
+Calc=True

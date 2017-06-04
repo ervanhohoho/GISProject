@@ -1,13 +1,13 @@
 [Ilwis]
 Description=
-Time=1495426732
+Time=1495548518
 Version=3.1
 Class=Table
 Type=Table
 [Table]
 Domain=SulutPulauLayout.mps
 DomainInfo=SulutPulauLayout.mps;Long;UniqueID;0;;
-Columns=1
+Columns=3
 Records=14
 Type=TableStore
 [TableStore]
@@ -16,6 +16,8 @@ UseAs=No
 Col0=Name
 Type=TableBinary
 StoreTime=1491226536
+Col1=Area
+Col2=ForestArea
 [Col:Name]
 Description=
 Time=1495427218
@@ -28,3 +30,53 @@ OwnedByTable=No
 StoreType=String
 Stored=Yes
 Type=ColumnStore
+Width=20
+[Col:Area]
+Description=Area = String(RND(30000)+10000) + " km2"
+Time=1495548348
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=String(RND(30000)+10000) + " km2"
+NrDepObjects=0
+Calc=True
+[TableView]
+Columns=3
+Col0=Name
+Col1=Area
+StatPaneVisible=No
+RecordView=No
+ButtonWidth=8
+Col2=ForestArea
+[Col:ForestArea]
+Description=STRING(VALUE(LEFT(AREA,5))/5) + " km2"
+Time=1495548518
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=STRING(VALUE(LEFT(AREA,5))/5) + " km2"
+NrDepObjects=1
+Object0=Column Area
+Calc=True

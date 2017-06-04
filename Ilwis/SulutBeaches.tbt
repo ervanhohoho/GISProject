@@ -1,13 +1,13 @@
 [Ilwis]
 Description=
-Time=1491224806
+Time=1496550706
 Version=3.1
 Class=Table
 Type=Table
 [Table]
 Domain=SulutBeaches.mpp
 DomainInfo=SulutBeaches.mpp;Long;UniqueID;0;;
-Columns=1
+Columns=3
 Records=11
 Type=TableStore
 [TableStore]
@@ -16,9 +16,11 @@ UseAs=No
 Col0=Name
 Type=TableBinary
 StoreTime=1491224718
+Col1=Address
+Col2=Length
 [Col:Name]
 Description=
-Time=1491225028
+Time=1495550118
 Version=3.1
 Class=Column
 Domain=String.dom
@@ -28,7 +30,54 @@ OwnedByTable=No
 StoreType=String
 Stored=Yes
 Type=ColumnStore
+Width=20
 [TableView]
 StatPaneVisible=No
 RecordView=No
 ButtonWidth=8
+Columns=3
+Col0=Name
+Col1=Address
+Col2=Length
+[Col:Address]
+Description=Address = RIGHT(Name,4) + " street no. " + String(LENGTH(Name))
+Time=1495550132
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=25
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=RIGHT(Name,4) + " street no. " + String(LENGTH(Name))
+NrDepObjects=1
+Object0=Column Name
+Calc=True
+[Col:Length]
+Description=Length = String((RND(901)+99) * LENGTH(Name)) + " m"
+Time=1496550706
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=String((RND(901)+99) * LENGTH(Name)) + " m"
+NrDepObjects=1
+Object0=Column Name
+Calc=True

@@ -1,13 +1,13 @@
 [Ilwis]
 Description=
-Time=1490109994
+Time=1496550756
 Version=3.1
 Class=Table
 Type=Table
 [Table]
 Domain=Sulut_Mountains.mpp
 DomainInfo=Sulut_Mountains.mpp;Long;UniqueID;0;;
-Columns=1
+Columns=3
 Records=52
 Type=TableStore
 [TableStore]
@@ -16,9 +16,11 @@ UseAs=No
 Col0=Name
 Type=TableBinary
 StoreTime=1490109518
+Col1=Height
+Col2=Type
 [Col:Name]
 Description=
-Time=1490109994
+Time=1495550306
 Version=3.1
 Class=Column
 Domain=String.dom
@@ -28,3 +30,53 @@ OwnedByTable=No
 StoreType=String
 Stored=Yes
 Type=ColumnStore
+Width=20
+[Col:Height]
+Description=Height = String(RND(5251)+749) + " meters"
+Time=1496550744
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=String(RND(5251)+749) + " meters"
+NrDepObjects=0
+Calc=True
+[TableView]
+Columns=3
+Col0=Name
+Col1=Height
+Col2=Type
+StatPaneVisible=No
+RecordView=No
+ButtonWidth=8
+[Col:Type]
+Description=Type = IFF(LENGTH(Name)>7,"Volcanic","Non-Volcanic")
+Time=1496550756
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=IFF(LENGTH(Name)>7,"Volcanic","Non-Volcanic")
+NrDepObjects=1
+Object0=Column Name
+Calc=True

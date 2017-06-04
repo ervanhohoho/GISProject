@@ -1,13 +1,13 @@
 [Ilwis]
 Description=
-Time=1495548100
+Time=1496550174
 Version=3.1
 Class=Table
 Type=Table
 [Table]
 Domain=SulutRoads.mps
 DomainInfo=SulutRoads.mps;Long;UniqueID;0;;
-Columns=1
+Columns=3
 Records=289
 Type=TableStore
 [TableStore]
@@ -16,9 +16,11 @@ UseAs=No
 Col0=Name
 Type=TableBinary
 StoreTime=1495431288
+Col1=Length
+Col2=Type
 [Col:Name]
 Description=
-Time=1495548100
+Time=1496549936
 Version=3.1
 Class=Column
 Domain=String.dom
@@ -28,7 +30,53 @@ OwnedByTable=No
 StoreType=String
 Stored=Yes
 Type=ColumnStore
+Width=20
 [TableView]
 StatPaneVisible=No
 RecordView=No
 ButtonWidth=8
+Columns=3
+Col0=Name
+Col1=Length
+Col2=Type
+[Col:Length]
+Description=Length = String(RND(4921)+79) + " km"
+Time=1496550160
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=String(RND(4921)+79) + " km"
+NrDepObjects=0
+Calc=True
+[Col:Type]
+Description=Type = IFF(VALUE(LEFT(Length,LENGTH(Length)-3))>4000,"Arterial",IFF(VALUE(LEFT(Length,LENGTH(Length)-3))>2000,"Boulevard","Alley"))
+Time=1496550174
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=IFF(VALUE(LEFT(Length,LENGTH(Length)-3))>4000,"Arterial",IFF(VALUE(LEFT(Length,LENGTH(Length)-3))>2000,"Boulevard","Alley"))
+NrDepObjects=1
+Object0=Column Length
+Calc=True

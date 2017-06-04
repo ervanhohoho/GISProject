@@ -1,0 +1,35 @@
+[Ilwis]
+Description=PolygonMapRelate(SulutLakes.mpa,Sulut_MountainsBuffered5Km.mpa,intersects,false)
+Time=1495551060
+Version=3.1
+Class=Dependent Polygon Map
+Type=BaseMap
+[BaseMap]
+CoordSystem=unknown.csy
+CoordBounds=492168.48800000001 14234.648000000001 793690.3600000001 219708.22000000003
+Domain=SulutLakes.mpa
+DomainInfo=SulutLakes.mpa;Long;UniqueID;0;;
+Type=PolygonMap
+Proximity=1027.367860
+[PolygonMap]
+Type=PolygonMapVirtual
+Topological=Yes
+[IlwisObjectVirtual]
+Expression=PolygonMapRelate(SulutLakes.mpa,Sulut_MountainsBuffered5Km.mpa,intersects,false)
+DefOnlyPossible=No
+[ObjectDependency]
+NrDepObjects=1
+Object0=Sulut_MountainsBuffered5Km.mpa
+[PolygonMapVirtual]
+Expression=PolygonMapRelate(SulutLakes.mpa,Sulut_MountainsBuffered5Km.mpa,intersects,false)
+Type=PolygonMapRelate
+[PolygonMapRelate]
+InputMap1=SulutLakes.mpa
+InputMap2=Sulut_MountainsBuffered5Km.mpa
+Relation=intersects
+Negation=No
+[PolygonMapStore]
+Format=5
+DataPol=SulutLakesIntersectsSulut_MountainsBuffered5Km.mpz#
+Polygons=2
+DeletedPolygons=0

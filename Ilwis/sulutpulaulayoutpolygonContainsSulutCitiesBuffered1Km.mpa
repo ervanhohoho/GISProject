@@ -1,0 +1,35 @@
+[Ilwis]
+Description=PolygonMapRelate(sulutpulaulayoutpolygon.mpa,SulutCitiesBuffered1Km.mpa,contains,false)
+Time=1495551314
+Version=3.1
+Class=Dependent Polygon Map
+Type=BaseMap
+[BaseMap]
+CoordSystem=unknown.csy
+CoordBounds=492168.48800000001 14234.648000000001 793690.3600000001 219708.22000000003
+Domain=sulutpulaulayoutpolygon.mpa
+DomainInfo=sulutpulaulayoutpolygon.mpa;Long;UniqueID;0;;
+Type=PolygonMap
+Proximity=1027.367860
+[PolygonMap]
+Type=PolygonMapVirtual
+Topological=Yes
+[IlwisObjectVirtual]
+Expression=PolygonMapRelate(sulutpulaulayoutpolygon.mpa,SulutCitiesBuffered1Km.mpa,contains,false)
+DefOnlyPossible=No
+[ObjectDependency]
+NrDepObjects=1
+Object0=SulutCitiesBuffered1Km.mpa
+[PolygonMapVirtual]
+Expression=PolygonMapRelate(sulutpulaulayoutpolygon.mpa,SulutCitiesBuffered1Km.mpa,contains,false)
+Type=PolygonMapRelate
+[PolygonMapRelate]
+InputMap1=sulutpulaulayoutpolygon.mpa
+InputMap2=SulutCitiesBuffered1Km.mpa
+Relation=contains
+Negation=No
+[PolygonMapStore]
+Format=5
+DataPol=sulutpulaulayoutpolygonContainsSulutCitiesBuffered1Km.mpz#
+Polygons=1
+DeletedPolygons=0

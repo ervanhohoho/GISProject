@@ -1,0 +1,47 @@
+[Domain]
+Description=Domain UniqueID "SulutMinesBuffered10Km.mpa"
+Time=1495550496
+Version=3.1
+Class=Domain UniqueID
+Width=8
+Type=DomainUniqueID
+[Ilwis]
+ContainsDom=True
+Description=PolygonMapBuffer(SulutMines,10000.000000,Round)
+Time=1495550496
+Version=3.1
+Class=Dependent Polygon Map
+Type=BaseMap
+[DomainSort]
+Sorting=AlphaNumeric
+Prefix=Pol
+[DomainIdentifier]
+Nr=4
+[BaseMap]
+CoordSystem=unknown.csy
+CoordBounds=492168.48800000001 14234.648000000001 793690.3600000001 219708.22000000003
+Domain=SulutMinesBuffered10Km.mpa
+DomainInfo=SulutMinesBuffered10Km.mpa;Long;UniqueID;0;;
+Type=PolygonMap
+Proximity=1027.367860
+[PolygonMap]
+Type=PolygonMapVirtual
+Topological=Yes
+[IlwisObjectVirtual]
+Expression=PolygonMapBuffer(SulutMines,10000.000000,Round)
+DefOnlyPossible=No
+[ObjectDependency]
+NrDepObjects=1
+Object0=SulutMines.mpp
+[PolygonMapVirtual]
+Expression=PolygonMapBuffer(SulutMines,10000.000000,Round)
+Type=PolygonMapBuffer
+[PolygonMapBuffer]
+InputMap=SulutMines.mpp
+Distance=10000.000000
+CapStyle=1
+[PolygonMapStore]
+Format=5
+DataPol=SulutMinesBuffered10Km.mpz#
+Polygons=2
+DeletedPolygons=0

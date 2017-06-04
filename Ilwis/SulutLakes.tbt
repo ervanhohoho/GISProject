@@ -1,13 +1,13 @@
 [Ilwis]
 Description=
-Time=1491225620
+Time=1496550566
 Version=3.1
 Class=Table
 Type=Table
 [Table]
 Domain=SulutLakes.mps
 DomainInfo=SulutLakes.mps;Long;UniqueID;0;;
-Columns=1
+Columns=3
 Records=4
 Type=TableStore
 [TableStore]
@@ -16,9 +16,11 @@ UseAs=No
 Col0=Name
 Type=TableBinary
 StoreTime=1491225344
+Col1=Volume
+Col2=Depth
 [Col:Name]
 Description=
-Time=1491226656
+Time=1495549876
 Version=3.1
 Class=Column
 Domain=String.dom
@@ -28,3 +30,59 @@ OwnedByTable=No
 StoreType=String
 Stored=Yes
 Type=ColumnStore
+Width=20
+[Col:Volume]
+Description=Volume = LENGTH(Name) * (RND(651)+349)
+Time=1496550532
+Version=3.1
+Class=Column Calculate
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-70364460580170:70366608064165:1:offset=0
+ReadOnly=No
+OwnedByTable=No
+StoreType=Real
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=0
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=LENGTH(Name) * (RND(651)+349)
+NrDepObjects=1
+Object0=Column Name
+Calc=True
+Sum=21871.000000
+Mean=5467.750000
+StdDev=3035.114756
+MinMax=2814:9480
+[TableView]
+Columns=3
+Col0=Name
+Col1=Volume
+Col2=Depth
+StatPaneVisible=No
+RecordView=No
+ButtonWidth=8
+[Col:Depth]
+Description=Depth = IFF(Volume>2500,"Deep","Shallow")
+Time=1496550566
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=IFF(Volume>2500,"Deep","Shallow")
+NrDepObjects=1
+Object0=Column Volume
+Calc=True

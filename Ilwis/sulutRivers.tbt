@@ -1,13 +1,13 @@
 [Ilwis]
 Description=
-Time=1495431154
+Time=1496550320
 Version=3.1
 Class=Table
 Type=Table
 [Table]
 Domain=sulutRivers.mps
 DomainInfo=sulutRivers.mps;Long;UniqueID;0;;
-Columns=1
+Columns=3
 Records=52
 Type=TableStore
 [TableStore]
@@ -16,9 +16,11 @@ UseAs=No
 Col0=Name
 Type=TableBinary
 StoreTime=1495427700
+Col1=Length
+Col2=NumberOfFish
 [Col:Name]
 Description=
-Time=1495431562
+Time=1495549646
 Version=3.1
 Class=Column
 Domain=String.dom
@@ -28,7 +30,59 @@ OwnedByTable=No
 StoreType=String
 Stored=Yes
 Type=ColumnStore
+Width=20
 [TableView]
 StatPaneVisible=No
 RecordView=No
 ButtonWidth=8
+Columns=3
+Col0=Name
+Col1=Length
+Col2=NumberOfFish
+[Col:Length]
+Description=Length = String(LENGTH(Name)*RND(7)+3) + " km"
+Time=1496550210
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=String(LENGTH(Name)*RND(7)+3) + " km"
+NrDepObjects=1
+Object0=Column Name
+Calc=True
+[Col:NumberOfFish]
+Description=VALUE(LEFT(Length,LENGTH(Length)-3))*2
+Time=1496550320
+Version=3.1
+Class=Column Calculate
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-1e+100:1e+100:1.000000:offset=0
+ReadOnly=No
+OwnedByTable=No
+Type=ColumnVirtual
+Expression=VALUE(LEFT(Length,LENGTH(Length)-3))*2
+NrDepObjects=1
+Object0=Column Length
+Calc=True
+StoreType=Real
+Stored=Yes
+Sum=4022.000000
+Mean=77.346154
+StdDev=48.950910
+Width=12
+Decimals=0
+MinMax=14:230

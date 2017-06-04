@@ -1,0 +1,188 @@
+[Ilwis]
+Class=Map View
+Description=FinalMapSulut
+Time=1495551850
+Type=MapView
+Version=3.1
+
+[Layer1]
+Coloring=Normal
+Info=Yes
+Map=C__Users_Ervan_Documents_Project_GIS_Sulut.mpr
+Scale Limits=100:1000000
+Show=Yes
+Text=No
+Type=MapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+
+[Layer2]
+Boundaries=Yes
+BoundariesOnly=No
+BoundaryColor=0
+BoundaryWidth=3
+Color=4c8030
+Coloring=Normal
+HideSuperfluousBoundaries=No
+Info=Yes
+Method=SingleColor
+PolygonMap=sulutpulaulayoutpolygon.mpa
+Scale Limits=100:1000000
+Show=Yes
+Type=PolygonMapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+
+[Layer3]
+Color=0
+Coloring=Normal
+FillColor=545454
+Info=Yes
+Method=SingleColor
+PointMap=sulut_mountains.mpp
+Rotation=0.000000
+Scale Limits=100:1000000
+Show=Yes
+ShowSymbol=Yes
+Size=30
+Stretch=No
+Symbol=3
+SymbolType=Simple
+Text=No
+Type=PointMapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+Width=1
+
+[Layer4]
+Color=0
+Coloring=Normal
+FillColor=ffff
+Info=Yes
+Method=SingleColor
+PointMap=sulutbeaches.mpp
+Rotation=0.000000
+Scale Limits=100:1000000
+Show=Yes
+ShowSymbol=Yes
+Size=30
+Stretch=No
+Symbol=1
+SymbolType=Simple
+Text=No
+Type=PointMapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+Width=1
+
+[Layer5]
+Color=0
+Coloring=Normal
+FillColor=ffff00
+Info=Yes
+Method=SingleColor
+PointMap=sulutcities.mpp
+Rotation=0.000000
+Scale Limits=100:1000000
+Show=Yes
+ShowSymbol=Yes
+Size=30
+Stretch=No
+Symbol=0
+SymbolType=Simple
+Text=No
+Type=PointMapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+Width=1
+
+[Layer6]
+Boundaries=Yes
+BoundariesOnly=No
+BoundaryColor=0
+BoundaryWidth=3
+Color=e16840
+Coloring=Normal
+HideSuperfluousBoundaries=No
+Info=Yes
+Method=SingleColor
+PolygonMap=sulutlakes.mpa
+Scale Limits=100:1000000
+Show=Yes
+Type=PolygonMapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+
+[Layer7]
+Color=0
+Coloring=Normal
+FillColor=ff
+Info=Yes
+Method=SingleColor
+PointMap=sulutmines.mpp
+Rotation=0.000000
+Scale Limits=100:1000000
+Show=Yes
+ShowSymbol=Yes
+Size=30
+Stretch=No
+Symbol=2
+SymbolType=Simple
+Text=No
+Type=PointMapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+Width=1
+
+[Layer8]
+Color=0
+Coloring=Normal
+Info=No
+Method=SingleColor
+Scale Limits=100:1000000
+SegmentMap=sulutroads.mps
+Show=Yes
+Type=SegmentMapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+Width=15
+
+[Layer9]
+Color=e0cc18
+Coloring=Normal
+Info=No
+Method=SingleColor
+Scale Limits=100:1000000
+SegmentMap=sulutrivers.mps
+Show=Yes
+Type=SegmentMapDrawer
+Use Scale Limits=No
+UseCustomLegendRange=No
+Width=12
+
+[MapView]
+Background=ffffff
+CoordSystem=unknown.csy
+GeoRef=Sulut_GeoRef.grf
+Height=648
+Layers=9
+MapBounds=0 0 2595 3687
+MinMax=0 0 2595 3687
+Offset=0 0
+Scale=1217216.045804
+Width=1152
+
+[ObjectDependency]
+NrDepObjects=11
+Object0=Sulut_GeoRef.grf
+Object1=unknown.csy
+Object10=sulutrivers.mps
+Object2=C__Users_Ervan_Documents_Project_GIS_Sulut.mpr
+Object3=sulutpulaulayoutpolygon.mpa
+Object4=sulut_mountains.mpp
+Object5=sulutbeaches.mpp
+Object6=sulutcities.mpp
+Object7=sulutlakes.mpa
+Object8=sulutmines.mpp
+Object9=sulutroads.mps
+

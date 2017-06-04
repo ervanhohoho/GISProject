@@ -1,13 +1,13 @@
 [Ilwis]
 Description=
-Time=1491224672
+Time=1496550494
 Version=3.1
 Class=Table
 Type=Table
 [Table]
 Domain=SulutMines.mpp
 DomainInfo=SulutMines.mpp;Long;UniqueID;0;;
-Columns=1
+Columns=3
 Records=2
 Type=TableStore
 [TableStore]
@@ -16,6 +16,8 @@ UseAs=No
 Col0=Name
 Type=TableBinary
 StoreTime=1491224566
+Col1=Age
+Col2=Income
 [Col:Name]
 Description=
 Time=1491224726
@@ -28,3 +30,58 @@ OwnedByTable=No
 StoreType=String
 Stored=Yes
 Type=ColumnStore
+Width=20
+[Col:Age]
+Description=Age = RND(601)+99
+Time=1496550482
+Version=3.1
+Class=Column Calculate
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=99:2147483745:1:offset=0
+ReadOnly=No
+OwnedByTable=No
+StoreType=Real
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=0
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression=RND(601)+99
+NrDepObjects=0
+Calc=True
+Sum=512.000000
+Mean=256.000000
+StdDev=52.325902
+MinMax=219:293
+[TableView]
+Columns=3
+Col0=Name
+Col1=Age
+Col2=Income
+StatPaneVisible=No
+RecordView=No
+ButtonWidth=8
+[Col:Income]
+Description=Income = "$ "+String((RND(8000)+1000)*Age)
+Time=1496550494
+Version=3.1
+Class=Column Calculate
+Domain=String.dom
+DomainInfo=String.dom;String;string;0;;
+ReadOnly=No
+OwnedByTable=No
+StoreType=String
+Stored=Yes
+Type=ColumnVirtual
+Width=12
+Decimals=1
+DomainChangeable=Yes
+ValueRangeChangeable=Yes
+ExpressionChangeable=Yes
+Expression="$ "+String((RND(8000)+1000)*Age)
+NrDepObjects=1
+Object0=Column Age
+Calc=True
